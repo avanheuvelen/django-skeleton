@@ -13,5 +13,5 @@ Current Features
 * local_settings.py and default_settings.py.
 * pip requirements file with django, debug toolbar, django-extensions, ipython and psycopg2.
 * HTML 5 Boilerplate implemented
-* 1440px grid implemented.
+* 1140px grid implemented.
 
