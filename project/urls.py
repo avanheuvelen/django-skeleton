@@ -10,8 +10,10 @@ urlpatterns = patterns('',
     url(r'^robots.txt', TemplateView.as_view(template_name='robots.txt')),
     url(r'^humans.txt', TemplateView.as_view(template_name='humans.txt')),
     url(r'^crossdomain.xml', TemplateView.as_view(template_name='crossdomain.xml')),
-    url(r'^static/(?P<path>.*)$', 'django.views.static.serve'),
-
     # This is your base URL:
     url(r'^$', TemplateView.as_view(template_name='base.html')),
 )
+if settings.DEBUG:
+    urlpatterns += patterns('',
+        url(r'^static/(?P<path>.*)$', 'django.views.static.serve'),
+    )
