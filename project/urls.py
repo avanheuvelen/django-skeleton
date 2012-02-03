@@ -13,7 +13,3 @@ urlpatterns = patterns('',
     # This is your base URL:
     url(r'^$', TemplateView.as_view(template_name='base.html')),
 )
-if settings.DEBUG:
-    urlpatterns += patterns('',
-        url(r'^static/(?P<path>.*)$', 'django.views.static.serve'),
-    )
