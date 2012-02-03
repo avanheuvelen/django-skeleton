@@ -13,7 +13,6 @@ TEMPLATE_DIRS = (
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
-MEDIA_URL = '/media/'
 
 MANAGERS = ADMINS
 
@@ -28,9 +27,11 @@ USE_I18N = True
 
 USE_L10N = True
 
+MEDIA_URL = '/media/'
+
 STATIC_URL = '/static/'
 
-ADMIN_MEDIA_PREFIX = '/media/admin/'
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'media/'
 
 SECRET_KEY = '_$&pr_o0%8n$b=y!c*7-=v^_9nv+5(kef!vjt15bd3l7a60=!+'
 
