@@ -19,7 +19,8 @@ Usage
 -----------
 
 Copy the project somewhere and:
-- Generate a new SECRET_KEY
-- Rename project to the project name.
-- Set ip of debugger in INTERNAL_IPS
-- Set up database or use sqlite
+
+1. Generate a new SECRET_KEY
+2. Rename project to the project name.
+3. Set ip of debugger in INTERNAL_IPS
+4. Set up database or use sqlite
