@@ -3,6 +3,8 @@ from default_settings import *
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+SECRET_KEY = ''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.

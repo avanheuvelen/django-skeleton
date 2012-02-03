@@ -34,8 +34,6 @@ STATIC_ROOT = 'static_root/'
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
-SECRET_KEY = '_$&pr_o0%8n$b=y!c*7-=v^_9nv+5(kef!vjt15bd3l7a60=!+'
-
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
