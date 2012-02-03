@@ -7,7 +7,7 @@ This is a Django skeleton that fits my needs. Feel free to use it as a base for 
 Current Features
 -----------
 
-* [Django](http://www.djangoproject.com) 1.3
+* [Django](http://www.djangoproject.com) 1.3.1
 * Admin enabled.
 * local_settings.py and default_settings.py.
 * pip requirements file with django, debug toolbar, django-extensions, ipython and psycopg2.

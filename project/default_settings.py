@@ -5,6 +5,15 @@ PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 STATICFILES_DIRS = (
     os.path.join(PROJECT_DIR, 'static'),
 )
+
+MEDIA_URL = '/media/'
+
+STATIC_URL = '/static/'
+
+STATIC_ROOT = 'static_root/'
+
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_DIR, 'templates'),
 )
@@ -26,13 +35,6 @@ USE_I18N = True
 
 USE_L10N = True
 
-MEDIA_URL = '/media/'
-
-STATIC_URL = '/static/'
-
-STATIC_ROOT = 'static_root/'
-
-ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
@@ -75,22 +77,13 @@ INSTALLED_APPS = (
     'django.contrib.webdesign',
     'django.contrib.staticfiles',
 # Project
+
 # 3rd party
-)
-
-INSTALLED_APPS += (
-# Debug:
-    'debug_toolbar',
     'django_extensions',
-    'django.contrib.admindocs',
+    #'django.contrib.admindocs',
 )
 
-# For Debug toolbar:
-INTERNAL_IPS = ('127.0.0.1')
 
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': False,
-}
 
 LOGIN_URL = "/user/login/"
 LOGIN_REDIRECT_URL = "/"
