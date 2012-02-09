@@ -11,5 +11,5 @@ urlpatterns = patterns('',
     url(r'^humans.txt', TemplateView.as_view(template_name='humans.txt')),
     url(r'^crossdomain.xml', TemplateView.as_view(template_name='crossdomain.xml')),
     # This is your base URL:
-    url(r'^$', TemplateView.as_view(template_name='base.html')),
+    url(r'^$', TemplateView.as_view(template_name='index.html')),
 )
