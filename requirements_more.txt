@@ -1,0 +1,4 @@
+﻿psycopg2==2.4.4
+ipython==0.12
+django-debug-toolbar==0.9.4
+django-extensions==0.7.1
