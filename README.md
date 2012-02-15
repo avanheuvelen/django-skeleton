@@ -20,7 +20,8 @@ Usage
 
 Copy the project somewhere and:
 
-1. Generate a new SECRET_KEY
-2. Rename project to the project name.
-3. Set ip of debugger in INTERNAL_IPS
-4. Set up database or use sqlite
+1. Copy local_settings.py.template to local_settings.py
+2. Generate a new SECRET_KEY
+3. Rename project to the project name.
+4. Set ip of debugger in INTERNAL_IPS
+5. Set up database or use sqlite
